@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "email": "otabek@gmail.com",
+      "password": "$2a$10$ljtTBhuaEHXd1yTMFm6N2ubpMYVwivGuv7NhYqQzH9UZk1EKUYKc6",
+      "first_name": "Otabek",
+      "last_name": "Mustafoyev",
+      "id": 1
+    },
+    {
+      "email": "toxa@gmail.com",
+      "password": "$2a$10$ltSJOTmXtF.tt62RAcOs3uBkxdNq8tFHbVvxY4ivYt9NQUZaW5TnW",
+      "first_name": "Toxir",
+      "last_name": "Samatov",
+      "id": 2
+    },
+    {
+      "email": "said@gmail.com",
+      "password": "$2a$10$Id5mci1kJKxyEWTTwfh6Auk40kHWqJ6V3f1fj97euQ2znpeAZdiOu",
+      "first_name": "Saidbek",
+      "last_name": "Obidov",
+      "id": 3
+    },
+    {
+      "email": "laziz@gmail.com",
+      "password": "$2a$10$N34kgGskAwq3GfNrWmSOpelmLaduDigyY8JvsL/ILpGBqnWdUmt1q",
+      "first_name": "Laziz",
+      "last_name": "Musayev",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "post_title": "React hooks",
+      "post_body": "Sagittis letius dapibus morbi potenti vehicula cursus vivamus libero commodo eget ligula nisl bibendum rutrum lorem consequat ex finibus nascetur aptent nullam curabitur senectus litora elementum natoque posuere urna gravida fringilla vel consectetur dictumst aenean facilisis class suspendisse nunc cras faucibus condimentum maecenas sed facilisi luctus lectus habitasse tristique sociosqu",
+      "user_id": 2,
+      "user_name": "Toxir Samatov",
+      "id": 4
+    },
+    {
+      "post_title": "useState",
+      "post_body": "Sagittis letius dapibus morbi potenti vehicula cursus vivamus libero commodo eget ligula nisl bibendum rutrum lorem consequat ex finibus nascetur aptent nullam curabitur senectus litora elementum natoque posuere urna gravida fringilla vel consectetur dictumst aenean facilisis class suspendisse nunc cras faucibus condimentum maecenas sed facilisi luctus lectus habitasse tristique sociosqu",
+      "user_id": 2,
+      "user_name": "Toxir Samatov",
+      "id": 5
+    },
+    {
+      "post_title": "Redux-toolkit query",
+      "post_body": "Sagittis letius dapibus morbi potenti vehicula cursus vivamus libero commodo eget ligula nisl bibendum rutrum lorem consequat ex finibus nascetur aptent nullam curabitur senectus litora elementum natoque posuere urna gravida fringilla vel consectetur dictumst aenean facilisis class suspendisse nunc cras faucibus condimentum maecenas sed facilisi luctus lectus habitasse tristique sociosqu",
+      "user_id": 2,
+      "user_name": "Toxir Samatov",
+      "id": 6
+    },
+    {
+      "post_title": "Redux-toolkit ",
+      "post_body": "Nisi porttitor pede rhoncus dui in vehicula sagittis venenatis habitant nisl libero ultrices letius penatibus leo vitae parturient massa maecenas per himenaeos sit posuere congue interdum scelerisque ante rutrum ipsum bibendum suscipit condimentum dis fusce ultricies purus tincidunt luctus natoque erat convallis velit cras facilisis mi fringilla pharetra montes taciti",
+      "user_id": 1,
+      "user_name": "Otabek Mustafoyev",
+      "id": 8
+    },
+    {
+      "post_title": "useEffect",
+      "post_body": "Etiam  malesuada vestibulum nibh sed inceptos amet taciti eros vulputate aenean quisque vitae donec porttitor diam pellentesque mus viverra morbi ante lacus mattis mauris lacinia turpis ut maximus consectetuer tempus nunc elit pretium vehicula eleifend integer class quis massa ac tincidunt sem torquent praesent venenatis",
+      "user_id": 1,
+      "user_name": "Otabek Mustafoyev",
+      "id": 9
+    },
+    {
+      "post_title": "useState",
+      "post_body": "Etiam fusce libero laoreet blandit non malesuada vestibulum nibh sed inceptos amet taciti eros vulputate aenean quisque vitae donec porttitor diam pellentesque mus viverra morbi ante lacus mattis mauris lacinia turpis ut maximus consectetuer tempus nunc elit pretium vehicula eleifend integer class quis massa ac tincidunt sem torquent praesent venenatis",
+      "user_id": 1,
+      "user_name": "Otabek Mustafoyev",
+      "id": 10
+    },
+    {
+      "post_title": "Avtomobil",
+      "post_body": "Vulputate imperdiet porta ut curae quisque feugiat nunc libero donec turpis facilisis nec conubia ultricies maecenas eleifend facilisi dui pharetra mollis auctor cras natoque finibus scelerisque purus elementum eros et placerat mattis massa dis nisl sit fermentum aenean velit eget in dictumst dignissim penatibus molestie lobortis montes consequat consectetur semper",
+      "user_id": 3,
+      "user_name": "Saidbek Obidov",
+      "id": 11
+    },
+    {
+      "post_title": "Avtomobil moyi",
+      "post_body": "Vulputate imperdiet porta ut curae quisque feugiat nunc libero donec turpis facilisis nec conubia ultricies maecenas eleifend facilisi dui pharetra mollis auctor cras natoque finibus scelerisque purus elementum eros et placerat mattis massa dis nisl sit fermentum aenean velit eget in dictumst dignissim penatibus molestie lobortis montes consequat consectetur semper",
+      "user_id": 3,
+      "user_name": "Saidbek Obidov",
+      "id": 12
+    },
+    {
+      "post_title": "Yoqilg'i turlari",
+      "post_body": "Vulputate imperdiet porta ut curae quisque feugiat nunc libero donec turpis facilisis nec conubia ultricies maecenas eleifend facilisi dui pharetra mollis auctor cras natoque finibus scelerisque purus elementum eros et placerat mattis massa dis nisl sit fermentum aenean velit eget in dictumst dignissim penatibus molestie lobortis montes consequat consectetur semper",
+      "user_id": 4,
+      "user_name": "Laziz Musayev",
+      "id": 13
+    },
+    {
+      "post_title": "Tez yonuvchi vositalar",
+      "post_body": "Vulputate imperdiet porta ut curae quisque feugiat nunc libero donec turpis facilisis nec conubia ultricies maecenas eleifend facilisi dui pharetra mollis auctor cras natoque finibus scelerisque purus elementum eros et placerat mattis massa dis nisl sit fermentum aenean velit eget in dictumst dignissim penatibus molestie lobortis montes consequat consectetur semper",
+      "user_id": 4,
+      "user_name": "Laziz Musayev",
+      "id": 14
+    },
+    {
+      "post_title": "Benzin A95",
+      "post_body": "Urna ultricies tempor platea luctus imperdiet mollis dignissim justo pulvinar ut bibendum erat fames mus sodales ac ullamcorper tristique eu dapibus suscipit nostra congue pharetra quisque si sagittis sapien mattis turpis faucibus neque litora consectetuer vehicula felis a molestie finibus mauris aenean pellentesque nascetur eget nec letius nullam odio semper",
+      "user_id": 4,
+      "user_name": "Laziz Musayev",
+      "id": 15
+    },
+    {
+      "post_title": "Benzin A92",
+      "post_body": "Est odio class egestas massa ultrices congue vitae neque lacinia sit rhoncus consectetuer a urna primis aliquam penatibus sapien maecenas arcu etiam torquent bibendum convallis tempor vehicula libero sodales habitant magnis curae senectus metus nascetur natoque vivamus curabitur tellus ridiculus potenti maximus non dignissim euismod rutrum suscipit dapibus augue placerat",
+      "user_id": 4,
+      "user_name": "Laziz Musayev",
+      "id": 16
+    }
+  ]
+}
