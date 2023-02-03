@@ -19,6 +19,9 @@ import AddIcon from '@mui/icons-material/Add';
 import axios from 'axios';
 import { setPost } from '../../store/slice/post/postSlice';
 import { Card } from '../../components/Card/Card';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
 
 export const Profile = () => {
 	const user = useSelector((state) => state.user.user);
@@ -121,12 +124,18 @@ export const Profile = () => {
 							sx={{ fontWeight: '700', fontSize: '22px', color: '#fff' }}>
 							Posts
 						</Typography>
-						<Button
-							onClick={() => setCreatePostModal(true)}
-							variant='contained'
-							startIcon={<CreateIcon />}>
-							Create new post
-						</Button>
+						<Tippy
+							content='Add post'
+							animation='scale'
+							duration={1000}
+							delay={[500, 1000]}>
+							<Button
+								onClick={() => setCreatePostModal(true)}
+								variant='contained'
+								startIcon={<CreateIcon />}>
+								Create new post
+							</Button>
+						</Tippy>
 					</Box>
 					<List
 						sx={{

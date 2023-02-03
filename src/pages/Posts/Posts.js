@@ -12,6 +12,10 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPost } from '../../store/slice/post/postSlice';
+import { BsFillSignpost2Fill } from 'react-icons/bs';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
 
 export const Posts = () => {
 	const [users, setUsers] = useState([]);
@@ -84,6 +88,7 @@ export const Posts = () => {
 							Users
 						</Typography>
 						<Button onClick={handleAllPosts} variant='contained'>
+							<BsFillSignpost2Fill style={{ marginRight: '4px' }} />
 							All posts
 						</Button>
 					</Box>
@@ -125,7 +130,13 @@ export const Posts = () => {
 							<Typography variant='body2'>{el.post_body}</Typography>
 						</CardContent>
 						<CardActions>
-							<Button size='small'>Learn More</Button>
+							<Tippy
+								content='Learn more post'
+								animation='scale'
+								duration={1000}
+								delay={[500, 1000]}>
+								<Button size='small'>Learn More</Button>
+							</Tippy>
 						</CardActions>
 					</Card>
 				))}

@@ -13,6 +13,11 @@ import { Stack } from '@mui/system';
 import { Modal } from '../../components/Modal/Modal';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
+import { FiEdit } from 'react-icons/fi';
+import { MdDeleteForever } from 'react-icons/md';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
 
 export const Card = ({ obj }) => {
 	const editTitleRef = useRef();
@@ -66,12 +71,20 @@ export const Card = ({ obj }) => {
 					Description: {obj.post_body}
 				</Typography>
 
-				<Button
-					onClick={() => setEditPostModal(true)}
-					variant='contained'
-					color='warning'>
-					Edit
-				</Button>
+				<Tippy
+					content='Edit post'
+					placement='bottom'
+					animation='scale'
+					duration={1000}
+					delay={[500, 1000]}>
+					<Button
+						onClick={() => setEditPostModal(true)}
+						variant='contained'
+						color='warning'>
+						<FiEdit style={{ marginRight: '4px' }} />
+						Edit
+					</Button>
+				</Tippy>
 			</ListItem>
 			{editPostModal ? (
 				<Modal
@@ -99,15 +112,14 @@ export const Card = ({ obj }) => {
 							<Button
 								onClick={() => handleEditPost(obj.id)}
 								variant='contained'
-								color='success'
-								startIcon={<EditIcon />}>
-								Edit post
+								color='success'>
+								<FiEdit style={{ marginRight: '4px' }} /> Edit post
 							</Button>
 							<Button
 								onClick={() => handleDeletePost(obj.id)}
 								variant='contained'
-								color='error'
-								startIcon={<DeleteForeverIcon />}>
+								color='error'>
+								<MdDeleteForever size='18px' style={{ marginRight: '4px' }} />
 								Delete post
 							</Button>
 						</DialogActions>

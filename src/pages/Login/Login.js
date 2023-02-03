@@ -7,7 +7,7 @@ import {
 	Typography,
 } from '@mui/material';
 import { Stack } from '@mui/system';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import SendIcon from '@mui/icons-material/Send';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -22,6 +22,7 @@ export const Login = () => {
 	const passwordRef = useRef();
 	const [type, setType] = useState(false);
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	const handleFormSubmit = (evt) => {
 		evt.preventDefault();
@@ -36,6 +37,7 @@ export const Login = () => {
 					localStorage.setItem('user', JSON.stringify(res.data.user));
 					dispatch(setToken(res.data.accessToken));
 					dispatch(setUser(res.data.user));
+					navigate('/');
 				}
 			})
 			.catch((err) => console.log(err));

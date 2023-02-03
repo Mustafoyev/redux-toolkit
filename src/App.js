@@ -9,6 +9,7 @@ import { Profile } from './pages/Profile/Profile';
 import { Register } from './pages/Register/Register';
 import { setToken } from './store/slice/token/tokenSlice';
 import { setUser } from './store/slice/user/userSlice';
+import { IdleTimerConatiner } from './components/IdleTimerContainer/IdleTimerConatiner';
 
 function App() {
 	const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function App() {
 					<Route path='/posts' element={<Posts />} />
 					<Route path='/profile' element={<Profile />} />
 				</Routes>
+				<IdleTimerConatiner></IdleTimerConatiner>
 			</>
 		);
 	}

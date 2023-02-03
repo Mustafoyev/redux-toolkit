@@ -19,6 +19,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setMode } from '../../store/slice/mode/modeSlice';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import { AiFillSetting } from 'react-icons/ai';
+import { FiLogOut } from 'react-icons/fi';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
+import { setToken } from '../../store/slice/token/tokenSlice';
+import { setUser } from '../../store/slice/user/userSlice';
 
 export const Header = () => {
 	const [anchorElNav, setAnchorElNav] = useState(null);
@@ -46,6 +53,8 @@ export const Header = () => {
 	const handleLogOut = () => {
 		localStorage.removeItem('token');
 		localStorage.removeItem('user');
+		dispatch(setToken(''));
+		dispatch(setUser(''));
 		navigate('/');
 	};
 
@@ -197,12 +206,18 @@ export const Header = () => {
 					</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
-						<IconButton
-							sx={{ ml: 1, marginRight: '10px' }}
-							onClick={() => dispatch(setMode(!theme))}
-							color='inherit'>
-							{theme ? <LightModeIcon /> : <Brightness4Icon />}
-						</IconButton>
+						<Tippy
+							content='Dark / Light'
+							animation='scale'
+							duration={1000}
+							delay={[500, 1000]}>
+							<IconButton
+								sx={{ ml: 1, marginRight: '10px' }}
+								onClick={() => dispatch(setMode(!theme))}
+								color='inherit'>
+								{theme ? <LightModeIcon /> : <Brightness4Icon />}
+							</IconButton>
+						</Tippy>
 
 						<Tooltip title='Open settings'>
 							<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -231,6 +246,7 @@ export const Header = () => {
 									<Link
 										style={{ textDecoration: 'none', textAlign: 'center' }}
 										to={''}>
+										<AiFillSetting size='16px' style={{ marginRight: '4px' }} />
 										Settings
 									</Link>
 								</Button>
@@ -240,6 +256,7 @@ export const Header = () => {
 									onClick={handleLogOut}
 									style={{ textDecoration: 'none', textAlign: 'center' }}
 									to={''}>
+									<FiLogOut style={{ marginRight: '4px' }} />
 									Log Out
 								</Button>
 							</MenuItem>
